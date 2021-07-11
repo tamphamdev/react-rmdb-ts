@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Button from './components/Button'
-
+import Header from './components/Header'
+import Home from './components/Home'
 // Styles
-import {GlobalStyle} from './GlobalStyle'
+import {GlobalStyle} from './style/GlobalStyle'
 
 const  App:React.FC = () => {
   const [count, setCount] = useState(0)
@@ -11,16 +12,9 @@ const  App:React.FC = () => {
   return (
     <div className="App">
       <GlobalStyle/>
-      <header className="App-header">
-        <p>Hello Vite + React!</p>
-        <p>
-          <Button callback={handleSetCount} count={count}/>
-        </p>
-        <p>
-          Edit <code>App.tsx</code> and save to test HMR updates.
-        </p>
-
-      </header>
+      <Header/>
+      <Home />
+      <Button callback={handleSetCount} count={count}/>
     </div>
   )
 }

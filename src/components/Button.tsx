@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-
 interface Props {
   count: number,
   callback: any
