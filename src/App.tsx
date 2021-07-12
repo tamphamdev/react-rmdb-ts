@@ -6,15 +6,12 @@ import Home from './components/Home'
 import {GlobalStyle} from './style/GlobalStyle'
 
 const  App:React.FC = () => {
-  const [count, setCount] = useState(0)
-  const handleSetCount = () => setCount(count => count +1)
 
   return (
     <div className="App">
       <GlobalStyle/>
       <Header/>
       <Home />
-      <Button callback={handleSetCount} count={count}/>
     </div>
   )
 }
