@@ -1,8 +1,8 @@
-import  {useState, useEffect,useCallback} from 'react'
+import  {useState, useEffect,useCallback,FunctionComponent} from 'react'
 import API from '../services/API'
 
 export const useMovieFetch = (movieId:string| number) => {
-  const [state, setState] = useState({})
+  const [state, setState] = useState({} as any)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(false)
   const fetchMovie = async () => {

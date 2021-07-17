@@ -1,5 +1,5 @@
 import React from "react";
-
+import { calcTime } from "../../helper";
 // Components
 import Thumb from "../Thumb";
 // Config
@@ -20,7 +20,8 @@ const MovieInfo = ({movie}) => (
       clickable={false}/>
       <Text>
         <h1>{movie.title}</h1>
-        <h3>PLOT</h3>
+        <span>{movie.release_date}</span> | <span>{calcTime(movie.runtime)}</span>
+        <h3>Overview</h3>
         <p>{movie.overview}</p>
 
         <div className="rating-directors">

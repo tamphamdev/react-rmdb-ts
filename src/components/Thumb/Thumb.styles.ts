@@ -12,7 +12,6 @@ export const Image = styled.img`
   :hover {
     opacity: 0.8;
     will-change: transform;
-    transform: scale(1.1);
   }
   @keyframes animateThumb {
     from {
