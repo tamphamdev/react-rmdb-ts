@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 
 import { Wrapper, Content } from "./BreadCrumb.styles";
 
-interface IProps {
-  movieTitle:string
-}
+type Props = {
+  movieTitle: string;
+};
 
-const BreadCrumb = ({movieTitle}:IProps) => (
+const BreadCrumb = ({ movieTitle }: Props) => (
   <Wrapper>
     <Content>
       <Link to="/">
@@ -16,6 +16,6 @@ const BreadCrumb = ({movieTitle}:IProps) => (
       <span> | {movieTitle}</span>
     </Content>
   </Wrapper>
-)
+);
 
-export default BreadCrumb
+export default BreadCrumb;

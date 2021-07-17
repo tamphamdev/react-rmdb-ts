@@ -5,7 +5,6 @@ export const Wrapper = styled.div`
   background: var(--medGrey);
   border-radius: 6px;
   text-align: center;
-
   h3 {
     margin: 10px 0 0 0;
   }

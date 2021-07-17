@@ -1,13 +1,13 @@
 import React from "react";
 
 // Styles
-import { Wrapper, Content, Text } from './HeroImage.style'
-interface IProp {
-  image: string,
-  title: string,
-  text: string
-}
-const HeroImage = ({image,title,text}:IProp) => (
+import { Wrapper, Content, Text } from "./HeroImage.style";
+type Props = {
+  image: string;
+  title: string;
+  text: string;
+};
+const HeroImage = ({ image, title, text }: Props) => (
   <Wrapper image={image}>
     <Content>
       <Text>
@@ -16,6 +16,6 @@ const HeroImage = ({image,title,text}:IProp) => (
       </Text>
     </Content>
   </Wrapper>
-)
+);
 
-export default HeroImage
+export default HeroImage;

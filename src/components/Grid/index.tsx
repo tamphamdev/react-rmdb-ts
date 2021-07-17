@@ -2,11 +2,16 @@ import React from "react";
 
 import { Content, Wrapper } from "./Grid.styles";
 
-const Grid = ({header, children}) => (
+type Props = {
+  header: string;
+  children: any;
+};
+
+const Grid = ({ header, children }: Props) => (
   <Wrapper>
     <h1>{header}</h1>
     <Content>{children}</Content>
   </Wrapper>
-)
+);
 
-export default Grid
+export default Grid;
